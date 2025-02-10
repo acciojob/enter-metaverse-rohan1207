@@ -1,1 +1,7 @@
 /*  your css code here. If applicable */
+let button=document.querySelector("#enterBtn");
+let text=document.querySelector("#status");
+
+button.addEventListener("click",()=>{
+	text.textContent="Entered Metaverse";
+})
