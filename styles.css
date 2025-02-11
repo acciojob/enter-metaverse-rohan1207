@@ -1,7 +1,10 @@
-/*  your css code here. If applicable */
-let button=document.querySelector("#enterBtn");
-let text=document.querySelector("#status");
+let button = document.querySelector("#enterBtn");
+let text = document.querySelector("#status");
 
-button.addEventListener("click",()=>{
-	text.innerHTML="<h1>Entered Metaverse</h1>";
-})
+button.addEventListener("click", () => {
+    let newHeading = document.createElement("h1");
+    newHeading.textContent = "Entered Metaverse";
+    
+    // Replace <p> with <h1>
+    text.replaceWith(newHeading);
+});
